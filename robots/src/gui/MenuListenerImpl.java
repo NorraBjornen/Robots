@@ -15,8 +15,9 @@ public class MenuListenerImpl implements MenuListener {
 
     @Override
     public void menuSelected(MenuEvent e) {
-        frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
-        //System.exit(0);
+        new Thread(() ->
+                frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING))
+        ).start();
     }
 
     @Override
