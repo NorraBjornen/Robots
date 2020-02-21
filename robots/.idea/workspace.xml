@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be132bf4-1ffd-400d-a53f-46264a40cf1e" name="Default Changelist" comment="small refactor">
+    <list default="true" id="be132bf4-1ffd-400d-a53f-46264a40cf1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MainApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainApplicationFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/RobotsProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/RobotsProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/MinimizationParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/StateSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/StateSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/WindowAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/WindowAdapterImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +45,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581338302146" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gui" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="RobotsProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -84,8 +88,16 @@
       <workItem from="1581866804776" duration="3591000" />
       <workItem from="1582081998371" duration="44000" />
       <workItem from="1582306685859" duration="14000" />
-      <workItem from="1582309505963" duration="720000" />
+      <workItem from="1582309505963" duration="863000" />
     </task>
+    <task id="LOCAL-00001" summary="small refactor">
+      <created>1582310231362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582310231362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +108,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="small refactor" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1582310249508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1582310249508" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1581868712433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="547" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581868149460" />
-    <state x="772" y="162" key="CommitChangelistDialog2" timestamp="1582310213526">
+    <state x="772" y="162" key="CommitChangelistDialog2" timestamp="1582310255653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="772" y="162" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213526" />
+    <state x="772" y="162" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582310255653" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1582310213559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -132,21 +148,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213559" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="440" y="94" key="SettingsEditor" timestamp="1582310369242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582310369242" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582310233379">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582310233379" />
   </component>
 </project>
