@@ -3,8 +3,6 @@ package logic;
 import gui.GameWindow;
 import gui.LogWindow;
 import gui.MainApplicationFrame;
-
-import javax.swing.*;
 import java.io.*;
 import java.util.HashMap;
 
@@ -19,12 +17,11 @@ public class StateSaver {
         state.put("log.x", logWindow.getX());
         state.put("log.y", logWindow.getY());
 
-        int lVis = -1;
+        int logVisible = -1;
         if(logWindow.isDisplayable())
-            lVis = 0;
+            logVisible = 0;
 
-        state.put("log.visible", lVis);
-
+        state.put("log.visible", logVisible);
 
 
         state.put("mod.width", gameWindow.getWidth());
@@ -33,49 +30,48 @@ public class StateSaver {
         state.put("mod.y", gameWindow.getY());
 
 
-        int mVis = -1;
+        int modVisible = -1;
         if(gameWindow.isDisplayable())
-            mVis = 0;
+            modVisible = 0;
 
-        state.put("mod.visible", mVis);
+        state.put("mod.visible", modVisible);
         saveState(state);
     }
 
     private void saveState(Serializable s){
         try {
+            String path = homePath + "\\data";
             FileOutputStream fileOut =
-                    new FileOutputStream(homePath + "\\data");
+                    new FileOutputStream(path);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(s);
             out.close();
             fileOut.close();
-            System.out.println("Serialized data is saved in /tmp/employee.ser");
+            System.out.println("Serialized data is saved in " + path);
         } catch (IOException i) {
             i.printStackTrace();
         }
     }
 
-    public MinimizationParam restoreState(MainApplicationFrame frame, LogWindow logWindow, GameWindow gameWindow){
-        HashMap<String, Integer> s = getSavedState();
+    public void restoreState(MainApplicationFrame frame, LogWindow logWindow, GameWindow gameWindow){
+        HashMap<String, Integer> savedState = getSavedState();
 
-        boolean lHide = false;
-        boolean mHide = false;
+        boolean isLogHidden = false;
+        boolean isGameHidden = false;
 
-        if(s != null){
-            logWindow.setBounds(s.get("log.x"), s.get("log.y"), s.get("log.width"), s.get("log.height"));
-            int lVis = s.get("log.visible");
-            if(lVis == 0)
+        if(savedState != null){
+            logWindow.setBounds(savedState.get("log.x"), savedState.get("log.y"), savedState.get("log.width"), savedState.get("log.height"));
+            if(savedState.get("log.visible") == 0)
                 logWindow.setVisible(true);
             else{
-                lHide = true;
+                isLogHidden = true;
             }
 
-            gameWindow.setBounds(s.get("mod.x"), s.get("mod.y"), s.get("mod.width"), s.get("mod.height"));
-            int mVis = s.get("mod.visible");
-            if(mVis == 0)
+            gameWindow.setBounds(savedState.get("mod.x"), savedState.get("mod.y"), savedState.get("mod.width"), savedState.get("mod.height"));
+            if(savedState.get("mod.visible") == 0)
                 gameWindow.setVisible(true);
             else
-                mHide = true;
+                isGameHidden = true;
 
         } else
             gameWindow.setSize(400,  400);
@@ -84,7 +80,7 @@ public class StateSaver {
         frame.addWindow(logWindow);
         frame.addWindow(gameWindow);
 
-        if(lHide){
+        if(isLogHidden){
             try{
                 logWindow.setIcon(true);
             } catch (Exception e){
@@ -92,16 +88,13 @@ public class StateSaver {
             }
         }
 
-        if(mHide){
+        if(isGameHidden){
             try{
                 gameWindow.setIcon(true);
             } catch (Exception e){
                 e.printStackTrace();
             }
         }
-
-
-        return new MinimizationParam(lHide, mHide);
     }
 
     @SuppressWarnings("unchecked")

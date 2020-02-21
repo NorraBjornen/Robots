@@ -1,4 +1,6 @@
-package logic;
+package gui;
+
+import logic.CloseableFrame;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;

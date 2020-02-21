@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be132bf4-1ffd-400d-a53f-46264a40cf1e" name="Default Changelist" comment="added menu items">
+    <list default="true" id="be132bf4-1ffd-400d-a53f-46264a40cf1e" name="Default Changelist" comment="small refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainApplicationFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MenuListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MenuListenerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/RobotsProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/RobotsProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/MinimizationParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/StateSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/StateSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/WindowAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/WindowAdapterImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,53 +81,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581333800583</updated>
-      <workItem from="1581866804776" duration="3511000" />
+      <workItem from="1581866804776" duration="3591000" />
+      <workItem from="1582081998371" duration="44000" />
+      <workItem from="1582306685859" duration="14000" />
+      <workItem from="1582309505963" duration="720000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactor" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1581868712433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581868712433" />
+    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582310191473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582310191473" />
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582310192522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1582310192522" />
     <state x="547" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581868149460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="547" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581868149460" />
-    <state x="772" y="162" key="CommitChangelistDialog2" timestamp="1581873664439">
+    <state x="772" y="162" key="CommitChangelistDialog2" timestamp="1582310213526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="772" y="162" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581873664439" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581869705537">
+    <state x="772" y="162" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213526" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1582310213559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581869705537" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581869705537">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213559" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1582310213559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581869705537" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581869705537">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213559" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1582310213559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581869705537" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581869705537">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213559" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1582310213559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581869705537" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gui/MainApplicationFrame.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582310213559" />
   </component>
   <component name="masterDetails">
     <states>
